@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mb-4" *ngFor="let post of postArray">
+            <div class="card text-capitalize">
+                <div class="card-header bg-info text-white">
+                    <h2 title="{{post.title}}">
+                        {{post.title}}
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <p>{{post.body}}</p>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-outline-primary">Edit</button>
+                    <button class="btn btn-outline-danger">delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
